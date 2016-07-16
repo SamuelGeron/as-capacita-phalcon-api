@@ -1,0 +1,140 @@
+{
+	"variables": [],
+	"info": {
+		"name": "as-capacita-project-api",
+		"_postman_id": "f0350928-0e5f-59b8-3964-10c50582d797",
+		"description": "API REST com Phalcon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/",
+			"request": {
+				"url": {
+					"raw": "192.168.115.85/:8080/livros",
+					"auth": {},
+					"host": [
+						"192",
+						"168",
+						"115",
+						"85"
+					],
+					"path": [
+						":8080",
+						"livros"
+					],
+					"variable": [
+						{
+							"value": "",
+							"id": "8080"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Rota raiz da API"
+			},
+			"response": []
+		},
+		{
+			"name": "List Livros",
+			"request": {
+				"url": "192.168.115.85:8080/v1/Livros",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Busca usuários no banco de dados"
+			},
+			"response": []
+		},
+		{
+			"name": "List Livro",
+			"request": {
+				"url": "192.168.115.85:8080/v1/Categorias",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Busca um usuário no banco de dados"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Livro",
+			"request": {
+				"url": "192.168.115.85:8080/v1/Livros",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sTitulo",
+							"value": "My name is LINK, is not F****** ZELDA!",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sAutor",
+							"value": "TheOwn LINK",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "iCategoriaId",
+							"value": "4",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Adiciona um usuário no banco de dados"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Livro",
+			"request": {
+				"url": "192.168.115.85:8080/v1/Livros",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Edita um usuário no banco de dados"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Livro",
+			"request": {
+				"url": "agenciasys:1100/v1/users/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Remove um usuário do banco de dados"
+			},
+			"response": []
+		}
+	]
+}
