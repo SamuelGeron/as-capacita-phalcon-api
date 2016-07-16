@@ -9,6 +9,6 @@ return [
     'App\Models'            => __DIR__ . '/../app/models/',
     'App\Responses'         => __DIR__ . '/../app/responses/',
     'App\Services\Models'   => __DIR__ . '/../app/services/models/',
-    'App\Users\Controllers' => __DIR__ . '/../app/modules/users/controllers/',
-    'App\Users\Models'      => __DIR__ . '/../app/modules/users/models/',
+    'App\Livros\Controllers' => __DIR__ . '/../app/modules/livros/controllers/',
+    'App\Livros\Models'      => __DIR__ . '/../app/modules/livros/models/',
 ];
